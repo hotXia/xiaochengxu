@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view style="background-color:#eee;height:100%">
+  <view style="height:100rpx;background-color:white;display:flex;align-items:center;direction:row;justify-content:space-between">
+    <view style="width:50%;direction:row;display:flex;justify-content:center;" bindtap="chooseHomeWork">
+      <view style="margin-right:50rpx">未完成作业</view>
+      <view>></view>
+    </view>
+    <view style="width:1rpx;height:100%;background-color:#ddd"></view>
+    <view style="width:50%;direction:row;display:flex;justify-content:center;">
+      <view style="margin-right:50rpx">全部课程</view>
+      <view>></view>
+    </view>
+  </view>
+  <view style="margin:35rpx 20rpx 5rpx 20rpx;display:flex;direction:row;justify-content:space-between;background-color:white;padding:30rpx">
+    <view>左滑可修改作业状态</view>
+    <view>></view>
+  </view>
+  <view style="margin:0rpx 20rpx 5rpx 20rpx;display:flex;direction:row;justify-content:space-between;background-color:white;padding:30rpx">
+    <view>黑鲨橄榄球(01月15日日)</view>
+    <view>></view>
+  </view>
+  <view style="position:absolute;bottom:0rpx;width:100%" wx:if="{{flag}}">
+    <view wx:for="{{item}}" wx:for-item="itemName">
+      <view>
+      <view style="height:2rpx;width:100%;background:#ddd"></view>
+        <view style="display:flex;justify-content:center;item-align:center;background:white;padding:30rpx 0">
+        {{itemName.title}}
+        </view>
+        
+      </view>
+    </view>
+    <view style="height:15rpx;width:100%;background:#eee"></view>
+    <view style="display:flex;justify-content:center;item-align:center;background:white;padding:30rpx 0">
+      取消
+    </view>
+  </view>
+</view>

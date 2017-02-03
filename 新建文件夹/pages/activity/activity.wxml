@@ -1,0 +1,12 @@
+<navigator url="../detail/detail?title=我是navigate"  wx:for="{{item}}">
+  <view class="activity-img">
+    <text>{{item.title}}</text>
+    <image class="img" mode="scaleToFill" src="{{item.src}}"></image>
+    <text>￥25/次￥25/次￥25/次￥25/次￥25/次￥25/次￥25/次￥25/次￥25/次￥25/次￥25/次￥25/次￥25/次</text>
+    <text>{{item.priceNow}}</text>
+    <view class="activity-text">
+        <text>{{item.restPeople}}</text>
+        <text style="float:right">{{item.position}}</text>
+    </view>
+  </view>
+</navigator>
